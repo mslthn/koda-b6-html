@@ -87,6 +87,14 @@
     top: 35%;
     left: 2%;
 }
+.eye{
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    top: 35%;
+    right: 2%;
+}
 .input{
     width: 100%;
     height: 50px;
@@ -107,4 +115,64 @@
     border: none;
     border-radius: 10px;
     height: 60px;
+}
+.reg-bawah p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #4F5665;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40%;
+}
+.reg-bawah a{
+    color: #FF8906;
+    text-decoration-line: none;
+}
+.reg-bawah>.or{
+    margin-left: 8.5%;
+    color: #AAAAAA;
+}
+
+.fbgoogle{
+    width: 100%;
+    display: inline-block;    
+}
+.fbgoogle>.box{
+    position:relative;
+    border: 1px solid #FFFFFF;
+    box-shadow: #00000014;
+    border-radius: 10px;
+    display: inline-block;
+    height: 50px;
+    width: 48%;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0px 4px #00000014;
+}
+.icon-fb{
+    left: 5%;
+    vertical-align: middle;
+}
+.google{
+    border: solid 1px;
+    border-radius: 10px;
+    display: inline-block;
+    height: 50px;
+    width: 48%;
+    text-align: center;
+    padding-top: 10px;
+}
+.fbgoogle p{
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5%;
+    line-height: 100%;
+    color: #4F5665;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.icon-google{
+    vertical-align: middle;
 }
