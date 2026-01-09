@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,51 +15,54 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="nav-kiri">
             <div class="nav-icon">
-                <img src="icon/logo-putih.svg" alt="">
+                <img class="nav-icon-img" src="icon/logo-putih.svg" alt="">
                 <p>Coffee Shop</p>
             </div>
-            <div>
+            <div class="nav-list">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li class="home"><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                 </ul>
             </div>
         </div>
         <div class="nav-kanan">
-            <img src="icon/Search.svg" alt="">
-            <img src="icon/ShoppingCart.svg" alt="">
+            <img class="img-nav-kanan" src="icon/Search.svg" alt="">
+            <img class="img-nav-kanan" src="icon/ShoppingCart.svg" alt="">
             <ul>
-                <li><a href="">Signin</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li class="signin"><a href="">Signin</a></li>
+                <li class="signup"><a href="">Sign Up</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <div class="main-kiri">
-            <h1>Start Your Day with Coffee and Good Meals</h1>
-            <p>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day
-                with us for a bigger smile!</p>
-            <a href="">Get Started</a>
-            <div class="co-angka">
-                <div>
-                    <h2>90+</h2>
-                    <p>Staff</p>
-                </div>
-                <div>
-                    <h2>30+</h2>
-                    <p>Stories</p>
-                </div>
-                <div>
-                    <h2>800+</h2>
-                    <p>Customer</p>
+            <div class="content-main-kiri">
+                <h1>Start Your Day with Coffee and Good Meals</h1>
+                <p>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your
+                    day
+                    with us for a bigger smile!</p>
+                <a class="get-start" href="">Get Started</a>
+                <div class="co-angka">
+                    <div class="stat">
+                        <h2>90+</h2>
+                        <p>Staff</p>
+                    </div>
+                    <div class="stat2">
+                        <h2>30+</h2>
+                        <p>Stories</p>
+                    </div>
+                    <div class="stat3">
+                        <h2>800+</h2>
+                        <p>Customer</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="main-kanan">
-            <img src="img/home.jpg" alt="">
+            <img class="img-main-kanan" src="img/home.jpg" alt="">
         </div>
         <div class="provide-left">
 
@@ -91,7 +94,7 @@
         <div class="visit">
             <h1>Visit Our Store in the Spot on the Map Below</h1>
             <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-            <img src="img/Huge Global.png" alt="Global Map">
+            <!-- <img src="img/Huge Global.png" alt="Global Map"> -->
         </div>
         <div class="testimonial">
             <p>TESTIMONIAL</p>
