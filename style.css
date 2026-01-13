@@ -655,3 +655,16 @@ footer > div li {
 footer > div h4{
     margin-bottom: 20px;
 }
+.chat{
+    z-index: 5;
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    background-color: #FF8906;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
