@@ -668,3 +668,65 @@ footer > div h4{
     align-content: center;
     text-align: center;
 }
+
+.navbar-products{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    height: 75px;
+    background-color: #0B0909;
+}
+
+body > div.we-provide {
+    height: 360px;
+    /* top: 75px; */
+    width: 100%;
+    background-image: url(img/tiga-kopi.jpg) ;
+    background-position: bottom 35% center;
+    background-size: cover;
+}
+.we-provide > div:first-child{
+    /* position: absolute; */
+}
+.we-provide h1{
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: 400;
+    top: 180px;
+    width: 850px;
+    margin-left: 120px;
+    line-height: 100%;
+}
+.promo > div:first-child{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.promo .section .kupon{
+    width: 335px;
+    height: 106px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #88B788;
+    padding: 5px;
+    font-size: 14px;
+}
+.promo .section .kupon img{
+    height: 109px;
+    width: 96px;
+}
+.motherday{
+    font-weight: 800;
+}
+.promo .section .kupon div:last-child p:last-of-type{
+    color: white;
+    margin-top: 15px;
+}
+.promo .section{
+    display: flex;
+}
