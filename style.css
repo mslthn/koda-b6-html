@@ -2,12 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.sacramento-regular {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .imgLeft{
@@ -449,8 +444,214 @@
 
 .favorite-section{
     /* background-color: violet; */
-    
     position: relative;
-    top: 1570px;
+    top: 630px;
     width: 100%;
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: ; */
+}
+.favorite-section h2{
+    font-size: 48px;
+    font-weight: 500;
+    /* margin-left: 260px; */
+    /* text-align: center; */
+}
+.favorit-title p{
+    font-size: 16px;
+    font-weight: 400;
+    /* margin-left: 260px; */
+    margin-bottom: 50px;
+}
+.favorit-title{
+    justify-items: center;
+}
+.favorit-title .h2-brown{
+    color: #8E6447;
+}
+.garis{
+    width: 70px;
+    border: 3px solid #FF8906;
+    /* margin-left: 505px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.favorite-galery{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background-color: #0B0909; */
+}
+.favorite-galery .haznut img{
+    width: 280px;
+    height: 268px;
+    position:relative;
+    z-index: -1;
+}
+.haznut .caption p:last-of-type{
+    font-size: 22px;
+    font-weight: 500;
+    color: #FF8906;
+}
+.haznut .caption p:first-of-type{
+    font-size: 14px;
+}
+.haznut .caption a{
+    background-color: #FF8906;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    text-decoration-line: none;
+    color: black;
+    font-size: 14px;
+    align-content: center;
+    border-radius: 6px;
+}
+.haznut .caption div:last-child{
+    display: flex;
+}
+.haznut .caption img{
+    width: 58px;
+    height: 35px;
+    align-content: center;
+    z-index: 1;
+    border: #FF8906 solid 1px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.haznut .caption{
+    background-color: #FFFFFF;
+    top: -50px;
+    left: 10px;
+    width: 262px;
+    height: 217px;
+    position: relative;
+    padding: 10px;
+}
+.visit{
+    position: relative;
+    top: 620px;
+    justify-items: center;
+    text-align: center;
+}
+.visit h1{
+    font-size: 48px;
+    font-weight: 500;
+    
+}
+.visit .hbrown{
+    color: #8E6447;
+}
+.visit img{
+    width: 900px;
+    height: 586px;
+}
+.container{
+    position: relative;
+    top: 700px;
+    background: linear-gradient(168.18deg, #777C82 -114.74%, #0B0909 91.35%);
+    display: flex;
+    vertical-align: middle;
+    height: 583px;
+    gap: 20px;
+    padding: 80px;
+}
+.testimonial > .container div:last-child > div:last-of-type{
+    display: flex;
+    gap: 10px;
+    height: 55px;
+    width: 103px;
+}
+.testimonial > .container > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+.testimonial > .container > div:last-child p{
+    color: white;
+    font-size: 16px;
+}
+.testimonial > .container > div:last-child h1{
+    border-left: #FF8906 5px solid;
+    font-size: 48px;
+    color: white;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+.testimonial > .container div:last-child .bintang{
+    width: 220px;
+    height: 20px;
+}
+.testimonial > .container div:last-child > img:last-child{
+    height: 9px;
+    width: 76px;
+}
+.testimonial > .container div:first-child{
+    width: 578px;
+    height: 432px;
+}
+.testimonial img{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit:cover;
+}
+footer{
+    position: relative;
+    height: 371px;
+    top: 600px;
+    margin-top: 200px;
+}
+footer div:first-child{
+    display: flex;
+    gap: 50px;
+    margin: 50px;
+}
+footer div:first-child > div:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+footer > div:first-child > div:first-child .logo{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    h1{
+        font-family: sacramento;
+        color: #8E6447;
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 15px;
+    }
+}
+footer > div:first-child > div:first-child p{
+    font-size: 16px;
+    margin-top: 0;
+    color: #4F5665;
+}
+
+footer > div ul {
+    list-style-type: none;
+    /* margin-top: 10px; */
+}
+footer > div li {
+    color: #4F5665;
+    margin-top: 15px;
+}
+footer > div h4{
+    margin-bottom: 20px;
 }
