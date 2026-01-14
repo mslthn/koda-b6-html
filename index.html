@@ -92,19 +92,18 @@
             </div>
             <div class="favorite-galery">
                 <div class="haznut">
-                    <img src="img/hazelnut latte 1.png" alt="hazelnut latte 1">
+                    <img src="img/hazelnut-latte-1.png" alt="hazelnut latte 1">
                     <div class="caption">
                         <h4>Hazelnut Latte</h4>
-                        <p>You can explore the menu that we provide with fun and have their own taste and make your day
-                            better.</p>
+                        <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="">Buy</a>
-                            <img src="icon/ShoppingCartOren.svg" alt="">
+                            <a href="#">Buy</a>
+                            <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <div class="haznut">
+                <!-- <div class="haznut">
                     <img src="img/hazelnut latte 2.png" alt="hazelnut latte 2">
                     <div class="caption">
                         <h4>Hazelnut Latte</h4>
@@ -112,8 +111,8 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="">Buy</a>
-                            <img src="icon/ShoppingCartOren.svg" alt="">
+                            <a href="#">Buy</a>
+                            <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -125,8 +124,8 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="">Buy</a>
-                            <img src="icon/ShoppingCartOren.svg" alt="">
+                            <a href="#">Buy</a>
+                            <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -138,11 +137,11 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="">Buy</a>
-                            <img src="icon/ShoppingCartOren.svg" alt="">
+                            <a href="#">Buy</a>
+                            <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="visit">
@@ -223,6 +222,42 @@
             <a class="chat" href="https://wa.me/6288805101408?text=Haloo%20Anton"><img src="icon/ChatCircleDots.svg" alt="" style="width: 50px;"/></a>
         </div>
     </main>
+    <script>
+        const productsType = [
+            {
+                Image : "./img/hazelnut-latte-1.png",
+                name : "Milkshake",
+                description : "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price : 20000
+            }
+        ]
+
+        const product = document.querySelector(".haznut")
+        const container = document.createElement("div")
+        const img = document.createElement("img")
+        img.setAttribute("src", "./img/hazelnut-latte-1.png")
+        img.setAttribute("alt", "hazelnut latte")
+        container.append(img)
+        product.append(container)
+
+        const caption = document.createElement("div")
+            const menu = document.createElement("h4")
+            menu.setAttribute("tag", "h4")
+            menu.textContent="Hazelnut Latte"
+            caption.append(menu)
+            const desc = document.createElement("p")
+            desc.textContent = "You can explore the menu that we provide with fun and have their own taste and make your day better."
+            caption.append(desc)
+            const price = document.createElement("p")
+            price.textContent = "IDR 20.000"
+            caption.append(price)
+            const option = document.createElement("div")
+        //         const buyOption = document.createElement("a")
+        //         const cartOption = document.createElement("a")
+        //         option.append(buyOption, caption)
+        //     caption.append(menu, desc, price, option)
+        // container.append(caption)
+    </script>
 </body>
 
 </html>
