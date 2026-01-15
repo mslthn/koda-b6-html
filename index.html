@@ -33,29 +33,27 @@
             <img class="img-nav-kanan" src="icon/ShoppingCart.svg" alt="">
             <ul>
                 <li class="signin"><a href="">Signin</a></li>
-                <li class="signup"><a href="">Sign Up</a></li>
+                <li class="signup"><a href="register.html">Sign Up</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <div class="start">
-            <div class="main-kiri">
-                <div class="content-main-kiri">
+        <div class="container-main">
+            <div>
+                <div>
                     <h1>Start Your Day with Coffee and Good Meals</h1>
-                    <p>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your
-                        day
-                        with us for a bigger smile!</p>
+                    <p>We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</p>
                     <a class="get-start" href="">Get Started</a>
-                    <div class="co-angka">
-                        <div class="stat">
+                    <div>
+                        <div>
                             <h2>90+</h2>
                             <p>Staff</p>
                         </div>
-                        <div class="stat2">
+                        <div>
                             <h2>30+</h2>
                             <p>Stories</p>
                         </div>
-                        <div class="stat3">
+                        <div>
                             <h2>800+</h2>
                             <p>Customer</p>
                         </div>
@@ -63,13 +61,13 @@
                 </div>
             </div>
             <div class="main-kanan">
-                <img class="img-main-kanan" src="img/home.jpg" alt="">
+                <!-- <img class="img-main-kanan" src="img/home.svg" alt=""> -->
             </div>
         </div>
-        <div id="provide-section">
-            <div class="provide-left">
-                <div class="content-provide-left">
-                    <h2>We Provide <span class="h2-brown">Good Coffee</span> and <span class="h2-brown">Healthy Meals</span></h2>
+        <div class="provide-section">
+            <div>
+                <div>
+                    <h2>We Provide <span class="brown">Good Coffee</span> and <span class="brown">Healthy Meals</span></h2>
                     <p>You can explore the menu that we provide with fun and have their own taste and make your day
                         better.</p>
                     <ul>
@@ -80,8 +78,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="provide-right">
-                <img class="img-provide-right" src="img/barista.jpg" alt="">
+            <div>
+                <img src="img/barista-Rectangle.jpg" alt="Barista">
             </div>
         </div>
         <div class="favorite-section">
@@ -98,12 +96,12 @@
                         <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="#">Buy</a>
+                            <a href="detail-product.html">Buy</a>
                             <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="haznut">
+                <div class="haznut">
                     <img src="img/hazelnut latte 2.png" alt="hazelnut latte 2">
                     <div class="caption">
                         <h4>Hazelnut Latte</h4>
@@ -111,7 +109,7 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="#">Buy</a>
+                            <a href="detail-product.html">Buy</a>
                             <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
@@ -124,7 +122,7 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="#">Buy</a>
+                            <a href="detail-product.html">Buy</a>
                             <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
@@ -137,11 +135,11 @@
                             better.</p>
                         <p>IDR 20.000</p>
                         <div>
-                            <a href="#">Buy</a>
+                            <a href="detail-product.html">Buy</a>
                             <a href="#"><img src="icon/ShoppingCartOren.svg" alt=""></a>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         <div class="visit">
@@ -151,7 +149,7 @@
             <img src="img/Huge Global.png" alt="Global Map">
         </div>
         <div class="testimonial">
-            <div class="container">
+            <div>
                 <div>
                     <img src="img/viezh robert.jpg" alt="viezh robert">
                 </div>
@@ -222,7 +220,7 @@
             <a class="chat" href="https://wa.me/6288805101408?text=Haloo%20Anton"><img src="icon/ChatCircleDots.svg" alt="" style="width: 50px;"/></a>
         </div>
     </main>
-    <script>
+    <!-- <script>
         const productsType = [
             {
                 Image : "./img/hazelnut-latte-1.png",
@@ -251,13 +249,13 @@
             const price = document.createElement("p")
             price.textContent = "IDR 20.000"
             caption.append(price)
-            const option = document.createElement("div")
-        //         const buyOption = document.createElement("a")
-        //         const cartOption = document.createElement("a")
-        //         option.append(buyOption, caption)
-        //     caption.append(menu, desc, price, option)
-        // container.append(caption)
-    </script>
+            const option = document.createElement("div") 
+                const buyOption = document.createElement("a")
+                const cartOption = document.createElement("a")
+                option.append(buyOption, caption)
+            caption.append(menu, desc, price, option)
+        container.append(caption)
+    </script> -->
 </body>
 
 </html>
