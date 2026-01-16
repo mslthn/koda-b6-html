@@ -2,63 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    /* font-family: "Plus Jakarta Sans", sans-serif, sacramento; */
 }
-
-.imgLeft{
-    display: inline-block;
+.register-page{
+    width: 100%;
+    display: flex;
+    gap: 100px;
 }
-.main{
-    display: inline-block;
-    width: 780px;
-    margin-left: 5%;
-    /* margin-top: 5%; */
-    vertical-align: top
+.register-page>:first-child{
+    width: 33%;
 }
-
-.header{
-
-    display: inline-block;
+.register-page>:nth-child(2){
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 }
 .logo{
-    display: inline-block;
+    display:flex;
+    gap: 10px;
 }
-.name{
+.logo>:last-child{
     font-family: sacramento;
     color: #8E6447;
-    display: inline-block;
-    margin-left: 13px;
-}
-.name h1{
     font-size: 20px;
     font-weight: 400;
-    display: inline-block;
 }
-
-.register-form{
-
+.logo>:last-child h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+.register-page>:nth-child(2)>:nth-child(2){
+    width: 85%;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
-.register h2 {
+.register-page>:nth-child(2)>:nth-child(2)>p:first-of-type{
+    color: #4F5665;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.register-page>:nth-child(2)>:nth-child(2)>h2 {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     color: #8E6447;
 }
-.register p{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #8E6447;
-    margin-top: 20px;
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
-.container{
-    margin-top: 20px;
-}
-.title h3{
+.input-box h3{
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -71,8 +67,7 @@
 .form{
     position: relative;
     height: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 .icon{
     position: absolute;
@@ -97,7 +92,15 @@
     border-radius: 8px;
     position: absolute;
 }
-.button-reg{
+.reg-bawah{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.reg-bawah>button{
+    cursor: pointer;
     width: 100%;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 500;
@@ -115,49 +118,42 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #4F5665;
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 40%;
 }
 .reg-bawah a{
     color: #FF8906;
     text-decoration-line: none;
 }
-.reg-bawah>.or{
-    margin-left: 8.5%;
+.reg-bawah>p:last-child{
+    text-align: center;
     color: #AAAAAA;
 }
 
 .fbgoogle{
     width: 100%;
-    display: inline-block;    
+    display: flex;
+    justify-content: space-evenly;
 }
-.fbgoogle>.box{
+.fbgoogle> a{
+    /* background-color: #D00000; */
+    width: 100%;
     position:relative;
     border: 1px solid #FFFFFF;
     box-shadow: #00000014;
     border-radius: 10px;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     height: 50px;
     width: 48%;
     text-align: center;
     padding-top: 10px;
     box-shadow: 0px 4px #00000014;
 }
-.icon-fb{
-    left: 5%;
-    vertical-align: middle;
-}
-.google{
-    border: solid 1px;
-    border-radius: 10px;
-    display: inline-block;
-    height: 50px;
-    width: 48%;
-    text-align: center;
-    padding-top: 10px;
-}
-.fbgoogle p{
+
+.fbgoogle a p{
     display: inline-block;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 500;
@@ -168,8 +164,16 @@
     vertical-align: middle;
     margin-left: 15px;
 }
-.icon-google{
-    vertical-align: middle;
+.register-page>:nth-child(2)>:nth-child(2)>.forgot-pw{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.register-page>:nth-child(2)>:nth-child(2)>.forgot-pw a{
+    text-decoration: none;
+    color: #FF8906;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* home - index */
@@ -329,7 +333,7 @@
     padding: 15px 30px;
     /* margin-top: 30px; */
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
     color: #0B0909;
     width: 30%;
     text-align: center;
