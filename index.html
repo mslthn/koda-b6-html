@@ -18,13 +18,12 @@
     <nav class="navbar">
         <div class="nav-kiri">
             <div class="nav-icon">
-                <img class="nav-icon-img" src="icon/logo-putih.svg" alt="">
-                <p>Coffee Shop</p>
+                <a href="index.html"><img class="nav-icon-img" src="icon/logo-putih.svg" alt=""><p>Coffee Shop</p></a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="home"><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
                 </ul>
             </div>
         </div>
@@ -32,7 +31,7 @@
             <img class="img-nav-kanan" src="icon/Search.svg" alt="">
             <img class="img-nav-kanan" src="icon/ShoppingCart.svg" alt="">
             <ul>
-                <li class="signin"><a href="">Signin</a></li>
+                <li class="signin"><a href="login.html">Signin</a></li>
                 <li class="signup"><a href="register.html">Sign Up</a></li>
             </ul>
         </div>
@@ -220,7 +219,7 @@
             <a class="chat" href="https://wa.me/6288805101408?text=Haloo%20Anton"><img src="icon/ChatCircleDots.svg" alt="" style="width: 50px;"/></a>
         </div>
     </main>
-    <!-- <script>
+    <script>
         const productsType = [
             {
                 Image : "./img/hazelnut-latte-1.png",
@@ -237,10 +236,10 @@
         img.setAttribute("alt", "hazelnut latte")
         container.append(img)
         product.append(container)
-
+        const detail = document.querySelector(".caption")
         const caption = document.createElement("div")
             const menu = document.createElement("h4")
-            menu.setAttribute("tag", "h4")
+            // menu.setAttribute("tag", "h4")
             menu.textContent="Hazelnut Latte"
             caption.append(menu)
             const desc = document.createElement("p")
@@ -254,8 +253,9 @@
                 const cartOption = document.createElement("a")
                 option.append(buyOption, caption)
             caption.append(menu, desc, price, option)
-        container.append(caption)
-    </script> -->
+            detail.append.caption
+            container.append(detail)
+    </script>
 </body>
 
 </html>
