@@ -507,33 +507,33 @@
     width: 900px;
     height: 586px;
 }
-.testimonial > :first-child{
-    position: relative;
+.testimonial > *{
+    /* position: relative; */
     /* top: 700px; */
-    background: linear-gradient(168.18deg, #777C82 -114.74%, #0B0909 91.35%);
+    /* background: linear-gradient(168.18deg, #777C82 -114.74%, #0B0909 91.35%); */
     display: flex;
     vertical-align: middle;
     height: 583px;
     gap: 20px;
     padding: 80px;
 }
-.testimonial > :first-child> div:last-child > div:last-of-type{
+.testimonial >*> div:last-child > div:last-of-type{
     display: flex;
     gap: 10px;
     height: 55px;
     width: 103px;
 }
-.testimonial > :first-child > div:last-child{
+.testimonial >*> div:last-child{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 500px;
 }
-.testimonial > :first-child> div:last-child p{
+.testimonial >*> div:last-child p{
     color: white;
     font-size: 16px;
 }
-.testimonial > :first-child> div:last-child h1{
+.testimonial >*> :nth-child(2) h1{
     border-left: #FF8906 5px solid;
     font-size: 48px;
     color: white;
@@ -543,15 +543,15 @@
     padding-left: 20px;
     vertical-align: middle;
 }
-.testimonial > :first-child> div:last-child .bintang{
+.testimonial >*> div:last-child .bintang{
     width: 220px;
     height: 20px;
 }
-.testimonial >:first-child> div:last-child > img:last-child{
+.testimonial >*> div:last-child > img:last-child{
     height: 9px;
     width: 76px;
 }
-.testimonial > :first-child>div:first-child{
+.testimonial >*>div:first-child{
     width: 578px;
     height: 432px;
 }
