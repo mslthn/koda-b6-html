@@ -15,25 +15,28 @@
 </head>
 
 <body>
-    <nav class="navbar-products">
-        <div class="nav-kiri">
-            <div class="nav-icon">
-                <a href="index.html"><img class="nav-icon-img" src="icon/logo-putih.svg" alt=""><p>Coffee Shop</p></a>
+    <nav class="navbar hitam">
+        <div>
+            <div>
+                <img class="nav-icon-img" src="icon/logo-putih.svg" alt="">
+                <a href="index.html">Coffee Shop</a>
             </div>
-            <div class="nav-list">
+            <div>
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Product</a></li>
                 </ul>
             </div>
         </div>
-        <div class="nav-kanan">
-            <img class="img-nav-kanan" src="icon/Search.svg" alt="">
-            <img class="img-nav-kanan" src="icon/ShoppingCart.svg" alt="">
-            <ul>
-                <li class="signin"><a href="login.html">Signin</a></li>
-                <li class="signup"><a href="register.html">Sign Up</a></li>
-            </ul>
+        <div>
+            <img src="icon/Search.svg" alt="">
+            <img src="icon/ShoppingCart.svg" alt="">
+            <div>
+                <ul>
+                    <li><a href="login.html">Signin</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="we-provide">
@@ -42,13 +45,24 @@
     <div class="promo">
         <div>
             <h1>Today <span class="brown">Promo</span></h1>
-            <div>
+            <div class="arrow">
                 <img src="icon/left arrow white.svg" alt="">
                 <img src="icon/right arrow oren.svg" alt="">
             </div>
         </div>
         <div class="section">
-            <div class="kupon">
+            <!-- <div class="kupon">
+                <div>
+                    <img src="img/happy-mothers-day.png" alt="">
+                </div>
+                <div>
+                    <p><span class="bold">HAPPY MOTHER'S DAY!</span>
+                        <br>Get one of our favorite menu for free!
+                    </p>
+                    <p>Klaim Kupon</p>
+                </div>
+            </div> -->
+            <!-- <div class="kupon">
                 <div>
                     <img src="img/happy-mothers-day.png" alt="">
                 </div>
@@ -69,18 +83,7 @@
                     </p>
                     <p>Klaim Kupon</p>
                 </div>
-            </div>
-            <div class="kupon">
-                <div>
-                    <img src="img/happy-mothers-day.png" alt="">
-                </div>
-                <div>
-                    <p><span class="bold">HAPPY MOTHER'S DAY!</span>
-                        <br>Get one of our favorite menu for free!
-                    </p>
-                    <p>Klaim Kupon</p>
-                </div>
-            </div>
+            </div> -->
             <div class="kupon">
                 <div>
                     <img src="img/get-a-cup-of-coffee.png" alt="">
@@ -290,5 +293,60 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // const couponItem= [
+        //     {
+        //         id : 1,
+        //         img : "img/happy-mothers-day.png",
+        //         title : "",
+        //         detail : ""
+        //     }
+        // ]
+        const promoSection = document.querySelector(".section")
+        const coupon = document.createElement("div")
+        coupon.style.display = "flex"
+        coupon.style.flexDirection = "row"
+        coupon.style.background = "#88B788"
+        coupon.style.width = "300px"
+        coupon.style.height = "120px"
+        coupon.style.borderRadius = "20px"
+        coupon.style.padding = "10px"
+
+        const contImage = document.createElement("div")
+        contImage.style.height = "100px"
+        contImage.style.width = "80px"
+        const imgCpn = document.createElement("img")
+        imgCpn.setAttribute("src", "img/happy-mothers-day.png")
+        imgCpn.setAttribute("alt", "coupon")
+        imgCpn.style.objectFit = "cover"
+        imgCpn.style.height = "100px"
+        imgCpn.style.width = "80px"
+        contImage.append(imgCpn)
+        
+        const detail = document.createElement("div")
+        detail.style.height = "100px"
+        detail.style.width = "80%"
+        detail.style.fontFamily = "Plus Jakarta Sans, sans-serif"
+        const cpnTitle = document.createElement("p")
+        cpnTitle.textContent = "HAPPY MOTHER'S DAY"
+        cpnTitle.style.fontWeight = "700"
+        cpnTitle.style.fontSize = "14px"
+        cpnTitle.style.color = "black"
+        const cpnDesc = document.createElement("p")
+        cpnDesc.textContent = "Get one of our favorite menu for free!"
+        cpnDesc.style.fontSize = "14px"
+        cpnDesc.style.color = "black"
+        const claim = document.createElement("button")
+        claim.style.cursor = "pointer"
+        claim.style.background = "none"
+        claim.textContent = "Klaim Kupon"
+        claim.style.border = "none"
+        claim.style.color = "white"
+        detail.append(cpnTitle, cpnDesc, claim)
+        
+        coupon.append(contImage, detail)
+        promoSection.append(coupon)
+    </script>
 </body>
 </html>
