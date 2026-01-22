@@ -7,7 +7,7 @@
 .register-page{
     width: 100%;
     display: flex;
-    gap: 100px;
+    gap: 5rem;
 }
 .register-page>:first-child{
     width: 33%;
@@ -16,6 +16,7 @@
     width: 67%;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     margin-top: 5%;
 }
 .logo{
@@ -37,7 +38,7 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
 }
 .register-page>:nth-child(2)>:nth-child(2)>p:first-of-type{
     color: #4F5665;
@@ -93,13 +94,34 @@
     position: absolute;
 }
 .reg-bawah{
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 20px;
 }
-.reg-bawah>button{
+.register-page>:nth-child(2)>form>button{
+    cursor: pointer;
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    background-color: #FF8906;
+    color: #0B132A;
+    line-height: 20px;
+    letter-spacing: 0%;
+    font-size: 16px;
+    left: 45%;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+}
+.register-page>:nth-child(2)>:nth-child(2)>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.register-page>:nth-child(2)>:nth-child(2)>form>button{
     cursor: pointer;
     width: 100%;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -129,7 +151,7 @@
 }
 
 .fbgoogle{
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -1072,7 +1094,7 @@ body > div.we-provide {
     text-align: center;
     align-content: center;
 }
-.checkout-product>:nth-child(2)>:first-child>:first-child p{
+.checkout-product>:nth-child(2)>:first-child>:first-child button{
     background-color: #FF8906;
     color: #0B132A;
     font-size: 14px;
