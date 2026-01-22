@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rancho&family=Sacramento&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="register-page">
@@ -27,28 +28,28 @@
                 <h1>Coffee Shop</h1>
             </div>
         </div>
-        <div>
+        <form id="registerForm">
             <h2>Register</h2>
             <p>Fill out the form correctly</p>
             <div class="input-box">
                 <h3>Full Name</h3>
                 <div class="form">
                     <img class="icon" src="icon/Profile.svg" alt="">
-                    <input class="input" type="text" placeholder="Enter Your Full Name">
+                    <input class="input" type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
                 </div>
             </div>
             <div class="input-box">
                 <h3>Email</h3>
                 <div class="form">
                     <img class="icon" src="icon/mail.svg" alt="">
-                    <input class="input" type="text" placeholder="Enter Your Email">
+                    <input class="input" type="email" id="email" name="email" placeholder="Enter Your Email" required>
                 </div>
             </div>
             <div class="input-box">
                 <h3>Password</h3>
                 <div class="form">
                     <img class="icon" src="icon/Password.svg" alt="">
-                    <input class="input" type="text" placeholder="Enter Your Password">
+                    <input class="input" type="password" id="password" name="password" placeholder="Enter Your Password" required>
                     <img class="eye" src="icon/EyeSlash.svg" alt="">
                 </div>
             </div>
@@ -56,21 +57,78 @@
                 <h3>Confirm Password</h3>
                 <div class="form">
                     <img class="icon" src="icon/Password.svg" alt="">
-                    <input class="input" type="text" placeholder="Enter Your Password Again">
+                    <input class="input" type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter Your Password Again" required>
                     <img class="eye" src="icon/EyeSlash.svg" alt="">
                 </div>
             </div>
-            <div class="reg-bawah">
-                <button type="submit">Register</button>
-                <p>Have An Account? <a href="login.html">Login</a></p>
-                <p>Or</p>
-            </div>
-            <div class="fbgoogle">
-                <a href="https://www.facebook.com/"><img class="icon-fb" src="icon/facebook.svg" alt=""><p>Facebook</p></a>
-                <a href="https://www.google.com/"><img class="icon-google" src="icon/google.svg" alt=""><p>Google</p></a>
-            </div>
+            <button type="submit" >Register</button>
+        </form>
+        <div class="reg-bawah">
+            <p>Have An Account? <a href="login.html">Login</a></p>
+            <p>Or</p>
+        </div>
+        <div class="fbgoogle">
+            <a href="https://www.facebook.com/"><img class="icon-fb" src="icon/facebook.svg" alt="">
+                <p>Facebook</p>
+            </a>
+            <a href="https://www.google.com/"><img class="icon-google" src="icon/google.svg" alt="">
+                <p>Google</p>
+            </a>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            let datas = JSON.parse(localStorage.getItem("users")) || [];
+
+            $("#registerForm").on("submit", function(e){
+                e.preventDefault();
+                
+                const fullName = $("#fullName").val().trim();
+                const email = $("#email").val().trim();
+                const password = $("#password").val();
+                const confirmPassword = $("#confirmPassword").val();
+
+                if (!fullName || !email || !password || !confirmPassword) {
+                    alert("Please fill all fields");
+                    return;
+                }
+
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match");
+                    return;
+                }
+
+                if (password.length < 4) {
+                    alert("Password must be at least 4 characters");
+                    return;
+                }
+
+                const emailExists = datas.some(user => user.email === email);
+                if (emailExists) {
+                    alert("Email already registered");
+                    return;
+                }
+
+                const newUser = {
+                    id: datas.length + 1,
+                    fullName: fullName,
+                    email: email,
+                    password: password,
+                    createdAt: new Date().toLocaleDateString()
+                };
+
+                datas.push(newUser);
+                localStorage.setItem("users", JSON.stringify(datas));
+
+                alert("Registration successful! Redirecting to login...");
+                
+                this.reset();
+                
+                window.location.href = "login.html";
+            })
+        })
+    </script>
 </body>
 
 </html>
