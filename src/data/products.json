@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "./img/Authentic-Coffee.jpg",
+        "name": "Espresso",
+        "category" : "Coffee",
+        "description": "Concentrated coffee made by forcing hot, pressurized water through finely-ground coffee, resulting in a strong, rich, syrupy shot topped with a reddish-brown foam called crema.",
+        "price": 20000
+    },
+    {
+        "id": 2,
+        "image": "./img/hazelnut-latte-2.png",
+        "name": "Caramel Macchiato",
+        "category" : "Coffee",
+        "description": "Sweet, layered espresso drink with steamed milk, vanilla syrup, and a signature caramel drizzle on top, served hot or iced, creating a creamy, sweet, and slightly spiced coffee treat.",
+        "price": 20000
+    },
+    {
+        "id": 3,
+        "image": "./img/cafe-latte.jpg",
+        "name": "Caffe Latte",
+        "category" : "Coffee",
+        "description": "Creamy coffee drink made with a shot or two of espresso, a generous amount of steamed milk, and a thin layer of milk foam, resulting in a milder, milkier coffee with a smooth, velvety texture and subtle coffee flavor.",
+        "price": 20000
+    },
+    {
+        "id": 4,
+        "image": "./img/hazelnut-latte-4.jpg",
+        "name": "Hazelnut Latte",
+        "category" : "Coffee",
+        "description": "Creamy coffee drink blending rich espresso, steamed milk, and sweet hazelnut syrup, offering a smooth, nutty, and slightly sweet flavor profile.",
+        "price": 20000
+    },
+    {
+        "id": 5,
+        "image": "./img/frappucino.jpg",
+        "name": "Frappucino",
+        "category" : "Coffee",
+        "description": "Creamy coffee drink blending rich espresso, steamed milk, and sweet hazelnut syrup, offering a smooth, nutty, and slightly sweet flavor profile.",
+        "price": 20000
+    },
+    {
+        "id": 6,
+        "image": "./img/matcha-frappe-recipe-1739396679.jpg",
+        "name": "Matcha",
+        "category" : "Non Coffee",
+        "description": "Creamy matcha drink blending.",
+        "price": 20000
+    },
+    {
+        "id": 7,
+        "image": "./img/strawberry-matcha.jpg",
+        "name": "Strawberry Matcha",
+        "category" : "Non Coffee",
+        "description": "Matcha with strawberry.",
+        "price": 20000
+    },
+    {
+        "id": 8,
+        "image": "./img/chocolatte-frappe.jpg",
+        "name": "Chocolatte Frappe",
+        "category" : "Non Coffee",
+        "description": "Chocolatte creamy.",
+        "price": 20000
+    },
+    {
+        "id": 8,
+        "image": "./img/hazelnut-latte-3.png",
+        "name": "Snack Mix",
+        "category" : "Foods",
+        "description": "Snack mix.",
+        "price": 20000
+    }
+]
